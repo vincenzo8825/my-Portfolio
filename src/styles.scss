@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'aos/dist/aos.css';
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+// styles.scss
+// Definizioni avanzate dei colori e stile ultramoderno
+// src/styles/_variables.scss
+$primary-color: #2925FF;
+$secondary-color: #FF2565;
+$accent-color: #25FFDF;
+$dark-background: #121212;
+$light-background: #FFFFFF;
+$text-color: #EAEAEA;
+$button-color: #25FFDF;
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'Poppins', sans-serif;

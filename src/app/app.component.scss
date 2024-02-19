@@ -1,0 +1,56 @@
+/* app.component.scss */
+.navbar {
+  background-color: #121212; // Utilizza direttamente il colore
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: rgba(18, 18, 18, 0.9); // Leggermente più chiaro al passaggio del mouse
+  }
+}
+
+.navbar a {
+  color: #EAEAEA;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  margin: 0 15px;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  font-weight: 500;
+  &:hover, &:focus, &.active {
+    color: #25FFDF; // Colore al passaggio del mouse e per l'elemento attivo
+    background-color: rgba(255, 255, 255, 0.1); // Sfondo leggermente visibile
+    transform: translateY(-2px); // Solleva il link
+    &:after {
+      width: 100%; // Sottolineatura piena al passaggio del mouse
+    }
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #25FFDF; // Colore della sottolineatura
+    transition: width 0.3s ease;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px 0;
+    background-color: rgba(18, 18, 18, 0.95); // Maggiore trasparenza su dispositivi mobili
+  }
+  .navbar a {
+    margin: 10px auto;
+    width: auto; // Adatta la larghezza al contenuto
+    text-align: center; // Centra il testo nei link
+  }
+}

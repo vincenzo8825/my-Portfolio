@@ -1,0 +1,194 @@
+// Definizioni avanzate dei colori e stile ultramoderno
+$primary-color: #2925FF; // Blu profondo futuristico
+$secondary-color: #FF2565; // Rosa acceso per contrasto dinamico
+$accent-color: #25FFDF; // Acquamarina per tocchi luminosi e accattivanti
+$dark-background: #121212; // Sfondo scuro per elevare gli elementi di design
+$light-background: #FFFFFF; // Sfondo chiaro per aree di testo e contrasto
+$text-color: #EAEAEA; // Colore del testo per alta leggibilità su sfondo scuro
+$button-color: #25FFDF; // Colore uniforme per tutti i pulsanti
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'Poppins', sans-serif;
+
+// Stili base e impostazioni globali
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary;
+  color: $text-color;
+  background-color: $dark-background;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+// Hero section con animazioni uniche e design interattivo
+.hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  color: $text-color;
+  text-align: center;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, $accent-color 50%, transparent 50%);
+    animation: rotate 60s linear infinite; // Velocità dell'animazione aumentata
+    z-index: 0;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    max-width: 1200px;
+
+    .hero-title {
+      font-family: $font-secondary;
+      font-size: calc(2rem + 2vw);
+      color: $light-background;
+      margin-bottom: 0.5rem;
+      line-height: 1.2;
+      animation: fadeSlideIn 0.75s ease-out forwards; // Velocità dell'animazione aumentata
+    }
+
+    .tagline {
+      font-size: calc(1rem + 1vw);
+      font-weight: 400;
+      color: $light-background;
+      margin-bottom: 2rem;
+      animation: fadeSlideIn 1s ease-out forwards; // Velocità dell'animazione aumentata
+    }
+  }
+}
+// Definizione del colore del pulsante per la classe .btn-primary
+.btn-primary {
+  background-color: #25FFDF;
+  border: none;
+  color: $dark-background; // Colore del testo
+  border-radius: 30px; // Bordi arrotondati
+  padding: 1rem 2rem; // Dimensioni del padding
+  font-size: 1rem; // Dimensione del testo
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    background-color: darken(#25FFDF, 10%); // Scuro leggermente il colore al passaggio del mouse
+    transform: translateY(-5px);
+  }
+}
+
+// Animazioni chiave
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Stili delle sezioni con pulsanti centralizzati
+section {
+  padding: 100px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &:nth-of-type(even) {
+    background-color: $light-background;
+    color: $dark-background;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background-color: $accent-color;
+    }
+  }
+
+  p {
+    font-size: 1.25rem;
+    max-width: 800px;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .cta-button {
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+    color: $dark-background; // Colori dei pulsanti uniformati
+    background-color: $button-color; // Colore uniforme per tutti i pulsanti
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block; // Assicura che i pulsanti siano bloccati per centrarli
+    text-align: center;
+    margin: 20px auto; // Centra i pulsanti
+
+    &:hover {
+      background-color: darken($button-color, 10%);
+      transform: translateY(-5px);
+    }
+  }
+}
+
+// Responsive design per adattamento a dispositivi mobili e tablet
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    padding: 60px 20px;
+    .hero-title {
+      font-size: 2rem;
+    }
+    .tagline {
+      font-size: 1.25rem;
+    }
+  }
+  section {
+    padding: 60px 20px;
+  }
+}
+
+// Effetti globali di hover e focus per migliorare l'interattività
+a, button {
+  &:hover, &:focus {
+    outline: none;
+    transform: translateY(-3px);
+  }
+}

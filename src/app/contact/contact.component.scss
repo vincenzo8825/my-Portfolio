@@ -1,0 +1,173 @@
+.contact-container {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #2925FF, #FF2565); // Blu e rosa definiti direttamente
+  color: #EAEAEA; // Testo colore alto contrasto
+  text-align: center;
+
+  .contact-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(18, 18, 18, 0.7); // Sfondo semi-trasparente
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    .contact-form {
+      max-width: 500px; // Limita la larghezza per form più concentrati
+      margin: 30px auto; // Centra il form
+      padding: 20px; // Aggiunge un po' di spazio all'interno
+      background: rgba(255, 255, 255, 0.1); // Leggero sfondo per distinguerlo
+      border-radius: 15px; // Bordo arrotondato per integrarsi con il design generale
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Ombra per profondità
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; // Spazio tra i campi
+
+        .form-group {
+          display: flex;
+          flex-direction: column;
+
+          label {
+            margin-bottom: 5px; // Spazio tra etichetta e campo di input
+            color: #EAEAEA; // Colore dell'etichetta per alto contrasto
+            font-size: calc(0.85rem + 0.5vw); // Dimensione font responsive
+          }
+
+          input[type="text"],
+          input[type="email"],
+          textarea {
+            padding: 10px; // Più spazio dentro i campi
+            font-size: calc(0.8rem + 0.5vw); // Dimensione font leggermente ridotta
+            border: 2px solid #25FFDF; // Bordi colorati per rimanere in tema
+            border-radius: 10px; // Bordo arrotondato
+            background-color: rgba(255, 255, 255, 0.2); // Sfondo leggermente trasparente
+            color: #FFFFFF; // Colore del testo per leggibilità
+
+            &:focus {
+              outline: none; // Rimuove il bordo di focus predefinito
+              box-shadow: 0 0 0 2px #FF2565; // Aggiunge un ombra di focus per migliorare l'accessibilità
+            }
+          }
+
+          textarea {
+            resize: vertical; // Consente agli utenti di ridimensionare il textarea verticalmente
+          }
+        }
+
+        button {
+          padding: 10px 15px; // Spaziatura interna
+          font-size: calc(0.85rem + 0.5vw); // Dimensione font congruente con i campi
+          border: none; // Rimuove il bordo
+          border-radius: 20px; // Angoli arrotondati
+          background-color: #25FFDF; // Colore di sfondo che corrisponde al tema
+          color: #121212; // Colore del testo per un buon contrasto
+          cursor: pointer; // Cambia il cursore per indicare la cliccabilità
+          transition: background-color 0.3s, transform 0.2s; // Transizione per feedback visivo
+
+          &:hover {
+            background-color: #17CCB8; // Cambio di colore al passaggio del mouse
+            transform: translateY(-2px); // Solleva leggermente il bottone
+          }
+        }
+      }
+    }
+    h2 {
+      font-family: 'Poppins', sans-serif; // Font per titoli
+      font-size: calc(1.8rem + 1vw); // Reduced responsive font size
+      margin-bottom: 30px;
+      color: #FFFFFF; // Testo su sfondo chiaro
+    }
+
+    h3 {
+      font-family: 'Montserrat', sans-serif; // Font per sottotitoli
+      font-size: calc(1.3rem + 1vw); // Reduced responsive font size
+      color: #25FFDF; // Colore acquamarina
+      margin-bottom: 20px; // Consistent margin for subheaders
+    }
+
+    p, a {
+      font-family: 'Montserrat', sans-serif; // Uniform font for paragraphs and links
+      font-size: calc(0.9rem + 0.5vw); // Reduced responsive font size
+      margin-top: 10px;
+      color: #FFFFFF; // Keeping text white for readability
+    }
+
+    .linkedin-button {
+      background-color: #0077B5; // LinkedIn's brand color
+      color: #fff; // White text for contrast
+      font-weight: bold; // Make the text stand out
+      padding: 0.5rem 1.4rem; // Adjust padding for better shape
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2); // Subtle shadow for depth
+      &:hover {
+        background-color: darken(#0077B5, 15%); // Darken on hover for interaction feedback
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3); // Increased shadow for a lifting effect
+      }
+    }
+
+    // GitHub Button - Sleek black design
+    .github-button {
+      background-color: #000000; // Dark color for GitHub button
+      color: #fff; // White text for contrast
+      font-weight: bold; // Bold text for legibility
+      padding: 0.5rem 1.4rem; // Consistent padding with LinkedIn button
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2); // Consistent subtle shadow
+      &:hover {
+        background-color: #222; // Slightly darker on hover
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3); // Increased shadow for effect
+      }
+    }
+
+    // Scarica CV Button - Unique styling
+    .cv-download a {
+      background-color: #4CAF50; // Green color for CV download button
+      color: #fff; // White text for readability
+      font-weight: bold; // Bold text
+      padding: 0.5rem 1.4rem; // Matching padding for consistency
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2); // Subtle shadow for depth
+      transition: all 0.3s ease; // Smooth transition for effects
+      &:hover {
+        background-color: darken(#4CAF50, 15%); // Darken on hover
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3); // Larger shadow for a lifting effect
+      }
+    }
+
+    a.cta-button {
+      padding: 0.8rem 1.6rem; // Slightly reduced padding
+      border-radius: 30px; // More rounded
+      margin-top: 20px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      &:hover {
+        transform: translateY(-3px); // Less translation on hover
+      }
+    }
+
+    .contact-form {
+      form {
+        input, textarea, button {
+          font-size: calc(0.9rem + 0.5vw); // Reduced responsive font size
+          margin: 10px 0;
+          color: #121212; // For input and textarea text color
+        }
+
+        button {
+          background-color: #25FFDF; // Uniform color for button
+          &:hover {
+            background-color: #17CCB8; // Lighter shade on hover
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-container .contact-content {
+    h3 {
+      font-size: calc(1.2rem + 0.5vw); // Further reduced responsive font size for mobile
+    }
+    p, a {
+      font-size: calc(0.8rem + 0.5vw); // Further reduced responsive font size for mobile
+    }
+  }
+}
