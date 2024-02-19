@@ -46,14 +46,14 @@ export class ProjectsComponent implements AfterViewInit {
       description: 'Descrizione del Weather App Clone...',
       imageUrl: 'https://picsum.photos/200',
       githubLink: 'https://github.com/weatherappclone',
-      technologies: ['JavaScript', 'APIs', 'HTML', 'CSS'] // Aggiunto esempio di tecnologie
+      technologies: ['Bootstrap', 'Angular', 'HTML', 'CSS'] // Aggiunto esempio di tecnologie
     },
     {
       name: 'Medium Clone',
       description: 'Descrizione del Medium Clone...',
       imageUrl: 'https://picsum.photos/200',
       githubLink: 'https://github.com/mediumclone',
-      technologies: ['Vue.js', 'Vuex', 'Vuetify'] // Aggiunto esempio di tecnologie
+      technologies: ['Html', 'Css', 'Javascript']
     },
     {
       name: 'Coming Soon',
