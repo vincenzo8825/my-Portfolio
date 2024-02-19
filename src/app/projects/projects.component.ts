@@ -28,14 +28,14 @@ export class ProjectsComponent implements AfterViewInit {
       name: 'Capstone Project: Tutoring Platform',
       description: 'Descrizione del Capstone Project: Tutoring Platform...',
       videoUrl: '../../assets/Video WhatsApp 2024-02-19 ore 22.05.08_3f9b5452gggggggggg.mp4',
-      githubLink: 'https://github.com/tutoringplatform',
+      githubLink: 'https://github.com/vincenzo8825/Capstone-Project-Epicode-Front-End',
       technologies: ['Angular', 'Typescript', 'Material','Node js'] // Esempio di tecnologie utilizzate
     },
     {
       name: 'Netflix Clone',
       description: 'Descrizione del Netflix Clone...',
       videoUrl: '../../assets/Video WhatsApp 2024-02-19 ore 22.05.25_2695e8b8ggggggggggg.mp4',
-      githubLink: 'https://github.com/netflixclone',
+      githubLink: 'https://github.com/vincenzo8825/fs0523-Vincenzo-Rocca/tree/main/m2/s2/progetto%20settimanale',
       technologies: ['Bootstrap', 'Sass', 'Html' ,'Javascript'] // Esempio di tecnologie utilizzate
     }
   ];
