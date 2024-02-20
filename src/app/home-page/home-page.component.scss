@@ -9,8 +9,41 @@ $button-color: #25FFDF; // Colore uniforme per tutti i pulsanti
 $font-primary: 'Montserrat', sans-serif;
 $font-secondary: 'Poppins', sans-serif;
 
-// Stili base e impostazioni globali
-* {
+// Mixins
+@mixin transition-default {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+@mixin button-style($bg-color: $button-color, $text-color: $dark-background) {
+  background-color: $bg-color;
+  color: $text-color;
+  border: none;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  @include transition-default;
+
+  &:hover {
+    background-color: darken($bg-color, 10%);
+    transform: translateY(-5px);
+  }
+}
+
+@mixin hero-animation($name, $duration: 60s, $timing-function: linear, $iteration-count: infinite) {
+  animation: $name $duration $timing-function $iteration-count;
+}
+
+@mixin fade-slide-in($duration: 0.75s, $delay: 0s) {
+  animation: fadeSlideIn $duration ease-out $delay forwards;
+}
+
+// Reset globale e impostazioni di base
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -24,7 +57,7 @@ body {
   overflow-x: hidden;
 }
 
-// Hero section con animazioni uniche e design interattivo
+// Stili della sezione hero con animazioni uniche e design interattivo
 .hero-section {
   position: relative;
   height: 100vh;
@@ -44,7 +77,7 @@ body {
     width: 200%;
     height: 200%;
     background: radial-gradient(circle, $accent-color 50%, transparent 50%);
-    animation: rotate 60s linear infinite; // Velocità dell'animazione aumentata
+    @include hero-animation(rotate);
     z-index: 0;
   }
 
@@ -60,7 +93,7 @@ body {
       color: $light-background;
       margin-bottom: 0.5rem;
       line-height: 1.2;
-      animation: fadeSlideIn 0.75s ease-out forwards; // Velocità dell'animazione aumentata
+      @include fade-slide-in(0.75s);
     }
 
     .tagline {
@@ -68,25 +101,14 @@ body {
       font-weight: 400;
       color: $light-background;
       margin-bottom: 2rem;
-      animation: fadeSlideIn 1s ease-out forwards; // Velocità dell'animazione aumentata
+      @include fade-slide-in(1s, 0.5s);
     }
   }
 }
-// Definizione del colore del pulsante per la classe .btn-primary
-.btn-primary {
-  background-color: #25FFDF;
-  border: none;
-  color: $dark-background; // Colore del testo
-  border-radius: 30px; // Bordi arrotondati
-  padding: 1rem 2rem; // Dimensioni del padding
-  font-size: 1rem; // Dimensione del testo
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
 
-  &:hover {
-    background-color: darken(#25FFDF, 10%); // Scuro leggermente il colore al passaggio del mouse
-    transform: translateY(-5px);
-  }
+// Stili dei pulsanti
+.btn-primary {
+  @include button-style;
 }
 
 // Animazioni chiave
@@ -102,7 +124,7 @@ body {
 @keyframes fadeSlideIn {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -110,10 +132,9 @@ body {
   }
 }
 
-// Stili delle sezioni con pulsanti centralizzati
+// Stili delle sezioni con layout generale
 section {
   padding: 100px 0;
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,6 +150,7 @@ section {
     font-weight: 600;
     margin-bottom: 2rem;
     position: relative;
+
     &:after {
       content: '';
       position: absolute;
@@ -149,22 +171,9 @@ section {
   }
 
   .cta-button {
-    font-size: 1.25rem;
-    padding: 1rem 2rem;
-    color: $dark-background; // Colori dei pulsanti uniformati
-    background-color: $button-color; // Colore uniforme per tutti i pulsanti
-    border: none;
+    @include button-style($button-color, $dark-background);
     border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    display: block; // Assicura che i pulsanti siano bloccati per centrarli
-    text-align: center;
-    margin: 20px auto; // Centra i pulsanti
-
-    &:hover {
-      background-color: darken($button-color, 10%);
-      transform: translateY(-5px);
-    }
+    font-size: 1.25rem;
   }
 }
 
@@ -173,19 +182,22 @@ section {
   .hero-section {
     height: auto;
     padding: 60px 20px;
+
     .hero-title {
       font-size: 2rem;
     }
+
     .tagline {
       font-size: 1.25rem;
     }
   }
+
   section {
     padding: 60px 20px;
   }
 }
 
-// Effetti globali di hover e focus per migliorare l'interattività
+// Effetti globali di hover e focus
 a, button {
   &:hover, &:focus {
     outline: none;
