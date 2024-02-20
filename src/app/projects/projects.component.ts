@@ -27,7 +27,7 @@ export class ProjectsComponent implements AfterViewInit {
     {
       name: 'Capstone Project: Tutoring Platform',
       description: 'Descrizione del Capstone Project: Tutoring Platform...',
-      videoUrl: '../../assets/Video WhatsApp 2024-02-19 ore 22.05.08_3f9b5452gggggggggg.mp4',
+      videoUrl: '../../assets/essessese.mp4',
       githubLink: 'https://github.com/vincenzo8825/Capstone-Project-Epicode-Front-End',
       technologies: ['Angular', 'Typescript', 'Material','Node js'] // Esempio di tecnologie utilizzate
     },
