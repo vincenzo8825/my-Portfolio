@@ -12,7 +12,9 @@
     background-color: rgba(18, 18, 18, 0.9); // Leggermente più chiaro al passaggio del mouse
   }
 }
-
+h1 {
+  display: none;
+}
 .navbar a {
   color: #EAEAEA;
   text-decoration: none;

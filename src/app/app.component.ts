@@ -7,6 +7,9 @@ import AOS from 'aos';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+  // Aggiungi qui la proprietà title
+  title = 'Hello, Portfolio'; // Imposta il titolo come desideri
+
   ngOnInit() {
     AOS.init();
   }

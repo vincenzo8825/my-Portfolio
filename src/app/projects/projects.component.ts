@@ -2,8 +2,8 @@ import { Component, AfterViewInit, ElementRef, QueryList, ViewChildren } from '@
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import AOS from 'aos';
-import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
+// Assicurati di registrare i plugin di GSAP
 gsap.registerPlugin(ScrollTrigger);
 
 interface Project {
@@ -64,25 +64,21 @@ export class ProjectsComponent implements AfterViewInit {
     }
   ];
 
-  constructor(config: NgbCarouselConfig) {
-    // Configurazioni del carosello
-    config.interval = 3000;  // Cambia ogni 3 secondi
-    config.wrap = true;      // Ribalta all'inizio/fine
-    config.keyboard = true;  // Abilita la navigazione tramite tastiera
-    config.pauseOnHover = true; // Metti in pausa quando il mouse è sopra
+  constructor() {
+    // Il costruttore ora è vuoto
   }
 
   ngAfterViewInit(): void {
-    AOS.init({ duration: 1200, once: false }); // Imposta 'once' a false per animazioni ripetibili
+    AOS.init({ duration: 1200, once: false }); // Imposta le opzioni di AOS
 
     this.projectItems.forEach((item) => {
-      // Animazioni GSAP con ScrollTrigger per ciascun elemento del progetto
+      // Imposta le animazioni GSAP per ciascun elemento del progetto
       gsap.from(item.nativeElement, {
         scrollTrigger: {
           trigger: item.nativeElement,
-          start: "top bottom-=100", // Inizia l'animazione poco prima che l'elemento entri nella viewport
-          end: "bottom top+=100", // Continua l'animazione fino a quando l'elemento non esce dalla viewport
-          toggleActions: "play none none reverse", // Riproduce in entrata e inverte in uscita
+          start: "top bottom-=100",
+          end: "bottom top+=100",
+          toggleActions: "play none none reverse",
         },
         autoAlpha: 0,
         y: 50,
