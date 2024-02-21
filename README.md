@@ -2,7 +2,7 @@
 ## Benvenuti nel mio profilo professionale! Sono Vincenzo Rocca, un appassionato sviluppatore front-end con una fervida curiosità per l'innovazione e la tecnologia.
 
 ### Su di Me :man:
-### La mia passione per lo sviluppo web è nata presso Epicode, dove ho acquisito le competenze e la conoscenza necessarie per trasformare la mia passione in una carriera. Sono sempre alla ricerca di nuove sfide e opportunità di apprendimento, mantenendomi costantemente aggiornato sulle ultime tecnologie e tendenze nel campo dello sviluppo web.
+##### La mia passione per lo sviluppo web è nata presso Epicode, dove ho acquisito le competenze e la conoscenza necessarie per trasformare la mia passione in una carriera. Sono sempre alla ricerca di nuove sfide e opportunità di apprendimento, mantenendomi costantemente aggiornato sulle ultime tecnologie e tendenze nel campo dello sviluppo web.
 
 ### Competenze :gear:
 Le tecnologie e gli strumenti che utilizzo includono:
@@ -22,10 +22,10 @@ Nella sezione dei progetti del mio portfolio, troverete una collezione di lavori
 ### :phone: Contattami
 Sono interessato a collaborazioni e opportunità che mi permettano di crescere professionalmente. Non esitate a contattarmi per discutere di potenziali progetti o per qualsiasi domanda possiate avere:
 
-### Email: vincenzorocca88@gmail.com
-### Telefono: +393454098887
-### LinkedIn: Vincenzo Rocca
-### GitHub: vincenzo8825
+#### Email: vincenzorocca88@gmail.com
+#### Telefono: +393454098887
+#### LinkedIn: Vincenzo Rocca
+#### GitHub: vincenzo8825
 #### :handshake: Come contribuire
 ##### Se sei interessato a contribuire a uno dei miei progetti, sentiti libero di forkare il repository e inviare una pull request con le tue modifiche. Assicurati di descrivere cosa hai modificato e il motivo della modifica.
 
