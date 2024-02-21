@@ -1,27 +1,46 @@
-# Portfolio
+# Vincenzo Rocca - Portfolio Frontend Developer
+## Benvenuti nel mio profilo professionale! Sono Vincenzo Rocca, un appassionato sviluppatore front-end con una fervida curiosità per l'innovazione e la tecnologia.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.3.
+### Su di Me :man:
+##### La mia passione per lo sviluppo web è nata presso Epicode, dove ho acquisito le competenze e la conoscenza necessarie per trasformare la mia passione in una carriera. Sono sempre alla ricerca di nuove sfide e opportunità di apprendimento, mantenendomi costantemente aggiornato sulle ultime tecnologie e tendenze nel campo dello sviluppo web.
 
-## Development server
+### Competenze :gear:
+##### Le tecnologie e gli strumenti che utilizzo includono:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+#### HTML5
+#### CSS3/Sass
+#### JavaScript
+#### Angular & Angular Material
+#### Bootstrap
+#### Node.js
+#### GitHub
+Queste competenze sono state utilizzate per costruire e mantenere questo portfolio, dimostrando la mia capacità di lavorare con vari strumenti e tecnologie nel campo dello sviluppo web.
 
-## Code scaffolding
+### :file_folder:  Progetti
+Nella sezione dei progetti del mio portfolio, troverete una collezione di lavori che evidenziano le mie competenze tecniche e creative. Ogni progetto è una dimostrazione delle mie capacità di sviluppo e design. Vi invito a esplorare i link specifici per ogni progetto per una panoramica più dettagliata.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### :phone: Contattami
+Sono interessato a collaborazioni e opportunità che mi permettano di crescere professionalmente. Non esitate a contattarmi per discutere di potenziali progetti o per qualsiasi domanda possiate avere:
 
-## Build
+##### LinkedIn: Vincenzo Rocca
+##### GitHub: vincenzo8825
+#### :handshake: Come contribuire
+##### Se sei interessato a contribuire a uno dei miei progetti, sentiti libero di forkare il repository e inviare una pull request con le tue modifiche. Assicurati di descrivere cosa hai modificato e il motivo della modifica.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### :rocket: Avviare il Portfolio
+Per avviare il portfolio localmente, segui questi passaggi:
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+##### Clona il repository:
+bash
+Copy code
+git clone https://github.com/vincenzo8825/portfolio.git
+##### Installa le dipendenze:
+bash
+Copy code
+cd portfolio
+npm install
+##### Avvia il server di sviluppo:
+bash
+Copy code
+ng serve
+##### Naviga verso http://localhost:4200/ per vedere il portfolio in azione.
