@@ -5,15 +5,15 @@
 ##### La mia passione per lo sviluppo web è nata presso Epicode, dove ho acquisito le competenze e la conoscenza necessarie per trasformare la mia passione in una carriera. Sono sempre alla ricerca di nuove sfide e opportunità di apprendimento, mantenendomi costantemente aggiornato sulle ultime tecnologie e tendenze nel campo dello sviluppo web.
 
 ### Competenze :gear:
-Le tecnologie e gli strumenti che utilizzo includono:
+##### Le tecnologie e gli strumenti che utilizzo includono:
 
-### HTML5
-### CSS3/Sass
-### JavaScript
-### Angular & Angular Material
-### Bootstrap
-### Node.js
-### GitHub
+#### HTML5
+#### CSS3/Sass
+#### JavaScript
+#### Angular & Angular Material
+#### Bootstrap
+#### Node.js
+#### GitHub
 Queste competenze sono state utilizzate per costruire e mantenere questo portfolio, dimostrando la mia capacità di lavorare con vari strumenti e tecnologie nel campo dello sviluppo web.
 
 ### :file_folder:  Progetti
@@ -22,10 +22,8 @@ Nella sezione dei progetti del mio portfolio, troverete una collezione di lavori
 ### :phone: Contattami
 Sono interessato a collaborazioni e opportunità che mi permettano di crescere professionalmente. Non esitate a contattarmi per discutere di potenziali progetti o per qualsiasi domanda possiate avere:
 
-#### Email: vincenzorocca88@gmail.com
-#### Telefono: +393454098887
-#### LinkedIn: Vincenzo Rocca
-#### GitHub: vincenzo8825
+##### LinkedIn: Vincenzo Rocca
+##### GitHub: vincenzo8825
 #### :handshake: Come contribuire
 ##### Se sei interessato a contribuire a uno dei miei progetti, sentiti libero di forkare il repository e inviare una pull request con le tue modifiche. Assicurati di descrivere cosa hai modificato e il motivo della modifica.
 
