@@ -44,33 +44,34 @@ export class ProjectsComponent implements AfterViewInit {
     }
 
   ];
-
   otherProjects: Project[] = [
     {
       name: 'Weather App Clone',
       description: 'Descrizione del Weather App Clone...',
       imageUrl: 'https://picsum.photos/200',
-      githubLink: 'https://github.com/weatherappclone',
-      linkedinLink: 'https://github.com/weather',
-      technologies: ['Bootstrap', 'Angular', 'HTML', 'CSS'] // Aggiunto esempio di tecnologie
+      githubLink: 'https://github.com/utente/weatherappclone', // Assicurati che questo sia il link corretto
+      linkedinLink: 'https://www.linkedin.com/in/utente', // Aggiorna con il tuo link corretto di LinkedIn
+      technologies: ['Bootstrap', 'Angular', 'HTML', 'CSS']
     },
     {
       name: 'Medium Clone',
       description: 'Descrizione del Medium Clone...',
       imageUrl: 'https://picsum.photos/200',
-      githubLink: 'https://github.com/mediumclone',
-      linkedinLink: '',
+      githubLink: 'https://github.com/vincenzo8825/clone-medium',
+      linkedinLink: 'https://www.linkedin.com/feed/update/urn:li:activity:7166090835078451200/',
       technologies: ['Html', 'Css', 'Javascript']
     },
+    // Assicurati che ogni progetto abbia le informazioni aggiornate
     {
       name: 'Coming Soon',
       description: 'Prossimamente...',
       imageUrl: '',
       githubLink: '',
-      linkedinLink:'',
-      technologies: [] // Nessuna tecnologia elencata per ora
+      linkedinLink: '',
+      technologies: []
     }
   ];
+
 
   constructor() {
     // Il costruttore ora è vuoto
